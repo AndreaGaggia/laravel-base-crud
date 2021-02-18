@@ -8,6 +8,13 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body>
-        
+        <header class="text-center">
+            <h1>Laravel CRUD Blog</h1>
+        </header>
+        <nav class="d-flex justify-content-center">
+            <a href="#" class="btn btn-primary">Home</a>
+            <a href="#" class="btn">Posts</a>
+        </nav>
+        @yield('content')
     </body>
 </html>
