@@ -12,8 +12,8 @@
             <h1>Laravel CRUD Blog</h1>
         </header>
         <nav class="d-flex justify-content-center">
-            <a href="#" class="btn btn-primary">Home</a>
-            <a href="#" class="btn">Posts</a>
+            <a href="/" class="btn btn-outline-secondary">Home</a>
+            <a href="{{ route('posts.index') }}" class="btn btn-outline-secondary">Posts</a>
         </nav>
         @yield('content')
     </body>

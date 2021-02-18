@@ -22,4 +22,7 @@
             @endforeach
         </tbody>
     </table>
+    <div class="text-center">
+        <a href="{{ route('posts.create') }}" class="btn btn-lg btn-warning">Create a new post</a>
+    </div>
 @endsection
