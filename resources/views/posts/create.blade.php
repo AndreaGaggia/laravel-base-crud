@@ -9,6 +9,10 @@
             <input type="text" class="form-control" name="title" id="title">
             <small class="form-text text-muted">Ricorda, deve essere breve e di impatto.</small>
         </div>
+        <div class="from-group">
+            <label for="author">Autore del post</label>
+            <input type="text" class="form-control" name="author" id="author">
+        </div>
         <div class="form-group">
             <label for="body">Testo del post</label>
             <textarea class="form-control" name="body" id="body" cols="30" rows="3"></textarea>
