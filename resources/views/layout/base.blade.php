@@ -16,5 +16,7 @@
             <a href="{{ route('posts.index') }}" class="btn btn-outline-secondary">Posts</a>
         </nav>
         @yield('content')
+
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

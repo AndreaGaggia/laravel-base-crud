@@ -26,8 +26,13 @@
                     <td class="d-flex">
                         <a href="{{ route('posts.show', ['post'=> $post->id]) }}" class="btn text-secondary">show</a>
                         <a href="{{ route('posts.edit', ['post'=> $post->id]) }}" class="btn text-primary">edit</a>
-                        <a href="" class="btn text-danger">delete</a>
-                    </td>
+                        <!-- Button trigger modal -->
+                        <form action="{{ route('posts.destroy', ['post'=> $post->id]) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <input type="submit" value="delete" class="btn text-danger">
+                        </form>
+                        
                 </tr>
             @endforeach
         </tbody>
